@@ -9,6 +9,7 @@ module.exports = {
   output: {
     library: 'vue-js-modal',
     libraryTarget: 'umd',
+    globalObject: 'this',
     path: path.resolve(__dirname, '../dist'),
     publicPath: '/dist/',
   },
@@ -35,7 +36,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          'vue-style-loader',
+          // 'vue-style-loader',
           'css-loader'
         ]
       }
